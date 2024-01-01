@@ -30,7 +30,7 @@ shell.cd(path.resolve(__dirname))
 shell.rm('-rf', cacheDir)
 
 exec(
-  `git clone https://github.com/mozilla/pdf.js.git ${cacheDir} --single-branch --branch gh-pages --depth 1 --progress --verbose`,
+  `git clone https://github.com/mozilla/pdf.js.git ${cacheDir} --single-branch --branch master --depth 1 --progress --verbose`,
   'Error: Git clone failed'
 )
 
